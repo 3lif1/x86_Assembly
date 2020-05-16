@@ -17,7 +17,7 @@
 
 ```
 
-###Invoking system call with (int 0x80)
+### Invoking system call with (int 0x80)
 
 ```
 mov eax, [system call number it could be in hex or decemal but don't mix]
@@ -31,5 +31,5 @@ mov edi, [5th argument]
 
 ### Running the code by nasm:
 `nasm -f elf32 -o HelloWorld.o HelloWorld.asm`
-#linking the object to executable:
+# linking the object to executable:
 `ld -o HelloWorld HelloWorld.o`
