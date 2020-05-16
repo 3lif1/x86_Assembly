@@ -21,6 +21,6 @@ _start:
     int 0x80
 
 
-.section: .data
+section: .data
     message: db "Hello world!" ; db: define bytes to store the string
     mlen:    equ $-message ; equ: away that nasm understand to store message length
